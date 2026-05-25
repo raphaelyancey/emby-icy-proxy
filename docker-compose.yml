@@ -1,0 +1,9 @@
+# Just add that to your existing docker-compose.yml
+# [...]
+  icy-proxy:
+    build: ./icy-proxy
+    container_name: icy-proxy
+    restart: unless-stopped
+    networks:
+      - default # change to the network on which the Emby app is
+# [...]
